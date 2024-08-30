@@ -1,7 +1,10 @@
 import './App.css';
 import ClassComponentExample from './Components/ClassCompEx/ClassCompEx';
+import ConditionalRenderingEx from './Components/ConditionalRenderingEx/ConditionalRenderingEx';
 import DestructingClassEx from './Components/DestructingClassEx/DestructingClassEx';
 import DestructingFunctionalEx from './Components/DestructingFunctionalEx/DestructingFunctionalEx';
+import EventHandlingClassEx from './Components/EventHandlingClassEx/EventHandlingClassEx';
+import EventHandlingEx from './Components/EventHandlingEx/EventHandlingEx';
 import FunctionArrowEx from './Components/FunctionArrowEx/FunctionArrowEx';
 import FunctionCompEx from './Components/FunctionCompEx/FunctionCompEx';
 import JSXExample from './Components/JSXExample/JSXExample';
@@ -9,6 +12,8 @@ import PropsClass from './Components/PropsClassComponet/PropsClassComponet';
 import PropsExample from './Components/PropsExample/PropsExample';
 import StateExample from './Components/StateExample/StateExample';
 import WithoutJSX from './Components/WithoutJSXExample/WithoutJSXExample';
+import {ListRenederingEx} from "./Components/ListRenederingEx/ListRenederingEx"
+import FormHandlingEx from './Components/FormHandlingEx/FormHandlingEx';
 
 function App() {
   return (
@@ -33,8 +38,13 @@ function App() {
       <StateExample /> 
       <DestructingFunctionalEx fname="Abdel-Rahman" lname="Ahmed" age={25}/>
       <DestructingFunctionalEx fname="Eman" lname="Adel" age={22}/>
-      <DestructingFunctionalEx fname="Yousef" lname="Omran" age={37}/>*/}
+      <DestructingFunctionalEx fname="Yousef" lname="Omran" age={37}/>
       <DestructingClassEx fname="Asmaa" lname="Mohamed" age={21}/>
+      <EventHandlingEx />
+      <EventHandlingClassEx /> 
+      <ConditionalRenderingEx /> 
+      <ListRenederingEx /> */}
+      <FormHandlingEx />
     </div>
   );
 }
