@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import './style.css'
 
 export function ListRenederingEx () {
@@ -43,14 +43,14 @@ export function ListRenederingEx () {
     ]
 
     return(
-        <div>
+        <div className="card">
             {
                 values.map((value, idx) => (
-                    <div className="card" key={value.id}>
+                    <Fragment key={value.id}>
                        <h2>{value.name}</h2>
                        <span>{value.age}</span>
                        <p>{value.collage}</p>
-                    </div>
+                    </Fragment>
                 ))
             }
 

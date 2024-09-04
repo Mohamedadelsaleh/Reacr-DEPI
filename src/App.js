@@ -14,6 +14,13 @@ import StateExample from './Components/StateExample/StateExample';
 import WithoutJSX from './Components/WithoutJSXExample/WithoutJSXExample';
 import {ListRenederingEx} from "./Components/ListRenederingEx/ListRenederingEx"
 import FormHandlingEx from './Components/FormHandlingEx/FormHandlingEx';
+import FragmantEx from './Components/FragmantEx/FragmantEx';
+import RefsExample from './Components/RefsExample/RefsExample';
+import CompC from './Components/ContextExample/ContextExample';
+import { ContextProvider } from './Contexts/mainContext';
+import CompB from './Components/ContextExample/ComponentB/ComponentB';
+import GETHTTPEx from './Components/HTTPRequestsEx/GETHTTPEx/GETHTTPEx';
+import PostExample from './Components/HTTPRequestsEx/POSTHTTPEx/PostExample';
 
 function App() {
   return (
@@ -43,8 +50,24 @@ function App() {
       <EventHandlingEx />
       <EventHandlingClassEx /> 
       <ConditionalRenderingEx /> 
-      <ListRenederingEx /> */}
+      <ListRenederingEx /> 
       <FormHandlingEx />
+
+      <FragmantEx />
+      <RefsExample /> 
+      <ContextProvider value={
+              {
+                name: "Mo2men",
+                age: 22
+              }
+      }>
+        <CompC /> 
+      </ContextProvider>
+        <CompB /> 
+
+      <GETHTTPEx />*/}
+      <PostExample />
+
     </div>
   );
 }
