@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: peru;
+    width: 400px;
+    height: 200px;
+    gap: 0px;
+}

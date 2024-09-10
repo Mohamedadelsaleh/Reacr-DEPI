@@ -1,26 +1,11 @@
 import './App.css';
-import ClassComponentExample from './Components/ClassCompEx/ClassCompEx';
-import ConditionalRenderingEx from './Components/ConditionalRenderingEx/ConditionalRenderingEx';
-import DestructingClassEx from './Components/DestructingClassEx/DestructingClassEx';
-import DestructingFunctionalEx from './Components/DestructingFunctionalEx/DestructingFunctionalEx';
-import EventHandlingClassEx from './Components/EventHandlingClassEx/EventHandlingClassEx';
-import EventHandlingEx from './Components/EventHandlingEx/EventHandlingEx';
-import FunctionArrowEx from './Components/FunctionArrowEx/FunctionArrowEx';
-import FunctionCompEx from './Components/FunctionCompEx/FunctionCompEx';
-import JSXExample from './Components/JSXExample/JSXExample';
-import PropsClass from './Components/PropsClassComponet/PropsClassComponet';
-import PropsExample from './Components/PropsExample/PropsExample';
-import StateExample from './Components/StateExample/StateExample';
-import WithoutJSX from './Components/WithoutJSXExample/WithoutJSXExample';
-import {ListRenederingEx} from "./Components/ListRenederingEx/ListRenederingEx"
-import FormHandlingEx from './Components/FormHandlingEx/FormHandlingEx';
-import FragmantEx from './Components/FragmantEx/FragmantEx';
-import RefsExample from './Components/RefsExample/RefsExample';
-import CompC from './Components/ContextExample/ContextExample';
-import { ContextProvider } from './Contexts/mainContext';
-import CompB from './Components/ContextExample/ComponentB/ComponentB';
-import GETHTTPEx from './Components/HTTPRequestsEx/GETHTTPEx/GETHTTPEx';
-import PostExample from './Components/HTTPRequestsEx/POSTHTTPEx/PostExample';
+import ArrayWithUseState from './Components/HooksExamples/UseStateHookExamples/ArrayWithUseState';
+import FirstStateWithHooks from './Components/HooksExamples/UseStateHookExamples/FirstStateWithHooks';
+import HandlePerviousState from './Components/HooksExamples/UseStateHookExamples/HandlePeviousState';
+import ObjectWithUseState from './Components/HooksExamples/UseStateHookExamples/ObjectWithUseSatet';
+import ProductsWithUseState from './Components/HooksExamples/UseStateHookExamples/ProductsWithUseState';
+import Counter from './Components/HooksExamples/UseStateHookExamples/StateClassEx';
+import StringWithHooks from './Components/HooksExamples/UseStateHookExamples/StringWithHooks';
 
 function App() {
   return (
@@ -65,8 +50,15 @@ function App() {
       </ContextProvider>
         <CompB /> 
 
-      <GETHTTPEx />*/}
+      <GETHTTPEx />
       <PostExample />
+      <Counter /> 
+      <FirstStateWithHooks />
+      <StringWithHooks /> 
+      <HandlePerviousState />
+      <ObjectWithUseState /> 
+      <ArrayWithUseState />*/}
+      <ProductsWithUseState />
 
     </div>
   );

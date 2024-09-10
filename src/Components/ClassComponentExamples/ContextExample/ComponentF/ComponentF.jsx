@@ -1,5 +1,5 @@
 import React from "react";
-import { ContextConsumer } from "../../../Contexts/mainContext";
+import { ContextConsumer } from "../../../../Contexts/mainContext";
 
 class CompF extends React.Component {
 

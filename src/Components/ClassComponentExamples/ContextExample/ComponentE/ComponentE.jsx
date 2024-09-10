@@ -1,6 +1,6 @@
 import React from "react";
 import CompF from "../ComponentF/ComponentF";
-import { ContextConsumer } from "../../../Contexts/mainContext";
+import { ContextConsumer } from "../../../../Contexts/mainContext";
 
 
 class CompE extends React.Component {

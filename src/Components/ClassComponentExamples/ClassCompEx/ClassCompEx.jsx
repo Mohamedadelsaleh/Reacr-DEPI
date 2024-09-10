@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FunctionCompEx from "../FunctionCompEx/FunctionCompEx";
+import FunctionCompEx from "../../FunctionCompEx/FunctionCompEx";
 
 class ClassComponentExample extends Component {
     render(){
