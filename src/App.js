@@ -1,4 +1,14 @@
 import './App.css';
+import FetchDataWithUseEffect from './Components/HooksExamples/UseEffectExamples/FetchDataWithUseEffect';
+import SearchAboutPost from './Components/HooksExamples/UseEffectExamples/SearchAboutPost';
+import SearchWithButton from './Components/HooksExamples/UseEffectExamples/SearchWithButton';
+import SideEffectWithClass from './Components/HooksExamples/UseEffectExamples/SideEffectClassEx';
+import SideEffectWithUseEffectHook from './Components/HooksExamples/UseEffectExamples/SideEffectWithUseEffectHook';
+import UseEffectCleanUp from './Components/HooksExamples/UseEffectExamples/UseEffectCleanUp';
+import UseEffectOneTime from './Components/HooksExamples/UseEffectExamples/UseEffectOneTime';
+import UseEffectWithConditionalRendering from './Components/HooksExamples/UseEffectExamples/UseEffectWithConditionalRendering';
+import RefsExample from './Components/HooksExamples/UseRefHookExs/ClassExample';
+import UseRefHookEx from './Components/HooksExamples/UseRefHookExs/UseRefHookEx';
 import ArrayWithUseState from './Components/HooksExamples/UseStateHookExamples/ArrayWithUseState';
 import FirstStateWithHooks from './Components/HooksExamples/UseStateHookExamples/FirstStateWithHooks';
 import HandlePerviousState from './Components/HooksExamples/UseStateHookExamples/HandlePeviousState';
@@ -57,9 +67,18 @@ function App() {
       <StringWithHooks /> 
       <HandlePerviousState />
       <ObjectWithUseState /> 
-      <ArrayWithUseState />*/}
+      <ArrayWithUseState />
       <ProductsWithUseState />
-
+      <SideEffectWithClass />
+      <SideEffectWithUseEffectHook /> 
+      <UseEffectWithConditionalRendering />
+      <UseEffectOneTime /> 
+      <UseEffectCleanUp /> 
+      <FetchDataWithUseEffect />
+      <SearchAboutPost />
+      <SearchWithButton />
+      <RefsExample />*/}
+      <UseRefHookEx />
     </div>
   );
 }
