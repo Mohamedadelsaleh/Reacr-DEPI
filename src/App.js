@@ -1,4 +1,6 @@
+import React from 'react';
 import './App.css';
+import ComponenetC from './Components/HooksExamples/UseContextExamples/ComponenetC';
 import FetchDataWithUseEffect from './Components/HooksExamples/UseEffectExamples/FetchDataWithUseEffect';
 import SearchAboutPost from './Components/HooksExamples/UseEffectExamples/SearchAboutPost';
 import SearchWithButton from './Components/HooksExamples/UseEffectExamples/SearchWithButton';
@@ -16,6 +18,10 @@ import ObjectWithUseState from './Components/HooksExamples/UseStateHookExamples/
 import ProductsWithUseState from './Components/HooksExamples/UseStateHookExamples/ProductsWithUseState';
 import Counter from './Components/HooksExamples/UseStateHookExamples/StateClassEx';
 import StringWithHooks from './Components/HooksExamples/UseStateHookExamples/StringWithHooks';
+import SimpleExmple from './Components/HooksExamples/UseReducerHook/SimpleExmple';
+import ComplexExample from './Components/HooksExamples/UseReducerHook/ComplexExample';
+
+export const RoadContext = React.createContext();
 
 function App() {
   return (
@@ -77,8 +83,13 @@ function App() {
       <FetchDataWithUseEffect />
       <SearchAboutPost />
       <SearchWithButton />
-      <RefsExample />*/}
+      <RefsExample />
       <UseRefHookEx />
+      <RoadContext.Provider value={"ROOOOOOOOOOOOAD Massssssssssr"}>
+          <ComponenetC />
+      </RoadContext.Provider>
+      <SimpleExmple />*/}
+      <ComplexExample />
     </div>
   );
 }
